@@ -1,0 +1,15 @@
+import random
+
+chars = 'abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&*'
+
+numero = input('Informe a quantidade de senhas que deseja gerar: ')
+numero = int(numero)
+
+quantidade = input('Informe o numero de caracteres da senha: ')
+quantidade = int(quantidade)
+
+for p in range(numero):
+	password = ''
+	for c in range(quantidade):
+		password += random.choice(chars)
+	print(password)
